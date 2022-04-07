@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Chakra Interactive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="body-div">
+
+        <h2 id="top-heading">Human Body Abstraction</h2>
+
+        <div id="stickman-options">
+            <h6 id="options-heading">Stick Figure Options</h6>
+            <div>
+                <label for="lock">Lock length</label>
+                <input type="checkbox" name="lock" checked id="locked-checkbox">
+            </div>
+        </div>
+
+        <div id="picture-buttons">
+            <img src="Images/abstractman.png" alt="img1" class="img-fluid" width="60" id="abstractman-button">
+            <img src="Images/sama.jpeg" alt="img2" class="img-fluid" width="60" id="sama-button">
+            <img src="Images/elura.png" alt="img2" class="img-fluid" width="60" id="elura-button">
+            <img src="Images/abstractnataraja.jpeg" alt="img2" class="img-fluid" width="60" id="abstractnataraja-button">
+            <img src="Images/fullsplit.jpeg" alt="img2" class="img-fluid" width="60" id="fullsplit-button">
+            <img src="Images/halfsplit.jpeg" alt="img2" class="img-fluid" width="60" id="halfsplit-button">
+            <img src="Images/nataraja.png" alt="img2" class="img-fluid" width="60" id="nataraja-button">
+            <img src="Images/twofigures.jpeg" alt="img2" class="img-fluid" width="60" id="twofigures-button">
+            <img src="Images/bharatnatyam1.png" alt="img2" class="img-fluid" width="60" id="bharatnatyam1-button">
+            <img src="Images/bharatnatyam2.png" alt="img2" class="img-fluid" width="60" id="bharatnatyam2-button">
+            <img src="Images/bhuleshwar.png" alt="img2" class="img-fluid" width="60" id="bhuleshwar-button">
+        </div>
+
+        <div id="buttons">
+            <div id="moving-buttons">
+                <button id="move-up">&#x25B2;</button>
+                <div><button id="move-left">&#x25C0;</button>
+                    <button id="move-right">&#x25B6;</button>
+                </div>
+                <button id="move-down">&#x25BC;</button>
+            </div>
+                    
+            <div id="range-div">
+                <input type="range" id="scale-range" min="1" max="100" value="25"> 
+            </div>
+        </div>
+
+        
+
+        <div id="image-container">
+            <img src="Images/abstractman.png" id="bg-image" width="400" class="img-fluid" alt="image">
+        </div>
+
+
+
+        <div id="stickman-div">
+
+            <img src="Images/gridchakrawhite.png" alt="grid" width="420" id="chakra-png">
+        
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.js"></script> 
+    <script src='index.js'></script>
+</body>
+
+</html>
