@@ -7,6 +7,49 @@ let figThickness = 1.5 * ratio + 1.5;
 let svgFigSize = 1000;
 let circleRadius = 3 * ratio + 2;
 
+// hints
+
+let hint1Btn = document.querySelector("#hint1-btn");
+let hint2Btn = document.querySelector("#hint2-btn");
+let hint3Btn = document.querySelector("#hint3-btn");
+
+
+let hintBg= document.querySelector("#hint-bg");
+let hint1 = document.querySelector("#hint-1");
+let hint2 = document.querySelector("#hint-2");
+let hint3 = document.querySelector("#hint-3");
+
+hint1Btn.addEventListener('mouseover', ()=> {
+  hintBg.style.display = "block";
+  hint1.style.display = "flex";
+})
+
+hint1Btn.addEventListener('mouseout', ()=> {
+  hintBg.style.display = "none";
+  hint1.style.display = "none";
+})
+
+hint2Btn.addEventListener('mouseover', ()=> {
+  hintBg.style.display = "block";
+  hint2.style.display = "flex";
+})
+
+hint2Btn.addEventListener('mouseout', ()=> {
+  hintBg.style.display = "none";
+  hint2.style.display = "none";
+})
+
+hint3Btn.addEventListener('mouseover', ()=> {
+  hintBg.style.display = "block";
+  hint3.style.display = "flex";
+})
+
+hint3Btn.addEventListener('mouseout', ()=> {
+  hintBg.style.display = "none";
+  hint3.style.display = "none";
+})
+
+
 // let svgGrid = document.querySelector("#svg-grid");
 let imageContainer = document.querySelector("#image-container");
 let stickmanDiv = document.querySelector("#stickman-div");
