@@ -259,3 +259,14 @@ body {
 
 
 }
+
+a {
+    all:unset;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    all:unset;
+    cursor: pointer;
+}
